@@ -16,11 +16,17 @@
 
         $teste = mysqli_query ($conexao, $sql);
 
-        while($row = mysqli_fetch_array($teste)) {
-            echo "User já cadastrado";
+        if (mysqli_fetch_array($teste)) {
+            $return = 'ZH';
         }
+        else{
+            $return = 'ZG';
+        }
+
+        echo ($return);
 
         mysqli_close($conexao);
     ?>
+
 </body>
 </html>

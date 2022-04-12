@@ -7,11 +7,11 @@
         var pass2 = (document.getElementById("pass2").value);
 
         if(pass1 != pass2){
-            document.getElementById("message").innerHTML = 'Senhas não são iguais';
+            document.getElementById("res-pass").innerHTML = 'Senhas não são iguais';
             document.getElementById("pass2").value = clear;
         }
         else{
-            document.getElementById("message").innerHTML = "";
+            document.getElementById("res-pass").innerHTML = "";
         }
     }
 
@@ -23,13 +23,11 @@
         
         if (check.test(email) == false) 
         {
-            css.style.borderColor = 'red';
-            css.style.outline = 0;
+            document.getElementById("res-email").innerHTML = "Ops. E-mail inválido :O";
+            document.getElementById("email").value = clear;
         }
         else{
-            document.getElementById("message").innerHTML = "";
-            css.style.borderColor = "rgb(6, 105, 222)";
-            css.style.outline = 1;
+            document.getElementById("res-email").innerHTML = "";
         }
     }
 
@@ -37,6 +35,19 @@
         //Variaveis locais
         var user    = (document.getElementById("user").value);
         var xmlhttp = new XMLHttpRequest();
+
+        xmlhttp.onreadystatechange=function() {
+            if (this.readyState==4 && this.status==200) {
+             let position = this.response.search('ZH');
+             if(position > 0){
+                document.getElementById("res-login").innerHTML = "Esse user já está sendo usado :(" ;
+                document.getElementById("user").value = clear;
+            }
+             else{
+                document.getElementById("res-login").innerHTML = "";
+            }
+            }
+        }
 
         xmlhttp.open("GET","getuser.php?q="+user,true);
         xmlhttp.send();
