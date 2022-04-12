@@ -11,29 +11,28 @@ body{
     margin-bottom: 5%;
 }
 
-#t_label{
+.t_label{
     color: rgb(6, 105, 222);
     font-family: Verdana, Geneva, Tahoma, sans-serif ;
     text-decoration: none;
     
 }
 
-a#t_aux{
+a.t_aux{
     color: rgb(6, 105, 222);
     font-family: Verdana, Geneva, Tahoma, sans-serif ;
     font-size: 90%;
     text-decoration: none;
 }
 
-p#t_rodape{
+p.t_rodape{
     color: black;
     font-family: Verdana, Geneva, Tahoma, sans-serif ;
     font-size: 80%;
     text-decoration: none;
 }
 
-#caixa{
+.caixa{
     width: 14%;
     margin-top: 1%;
-
 }

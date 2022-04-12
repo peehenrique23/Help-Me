@@ -10,19 +10,22 @@
 <body>
 <h1 id="t_central">HELP ME</h1>
     <form action=inseribd.php method="post" name="login" enctype="multipart/form-data" id="b_login">
-        <label id="t_label"><b>Login</b></label><br>
+        <label class="t_label"><b>Login</b></label><br>
         <input type = "text" name ="login" maxlength="10" required placeholder="Nome Usuário" 
-        id="caixa"><br><br>
-        <label id="t_label"><b>E-mail</b></label><br>
-        <input type = "text" name ="login" maxlength="50" required placeholder="E-mail" id="caixa">
+        class="caixa"><br><br>
+        <label class="t_label"><b>E-mail</b></label><br>
+        <input type = "text" name ="login" maxlength="50" required placeholder="E-mail" class="caixa">
         <br><br>
-        <label id="t_label"><b>Senha</b></label><br>
-        <input type="password" name="pass" maxlength="20" required id="caixa">
+        <label class="t_label"><b>Senha</b></label><br>
+        <input type="password" name="pass" maxlength="20" required class="caixa" id="pass1">
         <br>
-        <input type="password" name="pass" maxlength="20" required id="caixa">
+        <input type="password" name="pass" maxlength="20" required class="caixa" id="pass2">
         <br>
-        <input type="submit" value="Cadastrar" id="caixa"><br>
-        <p id="t_rodape"><a href="http://localhost/HM-Help-Me/index.php" id="t_aux">Voltar</a></p>
+        <p id="message"></p>
+        <input type="submit" value="Cadastrar" class="caixa" id="cad"><br>
+        <p class="t_rodape"><a href="http://localhost/HM-Help-Me/index.php" class="t_aux">Voltar</a></p>
     </form>
+
+    <script src="http://localhost/HM-Help-Me/script.js"></script>
 </body>
 </html>

@@ -10,15 +10,15 @@
 <body>
     <h1 id="t_central">HELP ME</h1>
     <form action=login.php method="post" name="login" enctype="multipart/form-data" id="b_login">
-        <label id="t_label"><b>Login</b></label><br>
-        <input type = "text" name ="login" maxlength="50" required placeholder="Email/Nome Usuário" id="caixa">
+        <label class="t_label"><b>Login</b></label><br>
+        <input type = "text" name ="login" maxlength="50" required placeholder="Email/Nome Usuário" class="caixa">
         <br><br>
-        <label id="t_label"><b>Senha</b></label><br>
-        <input type="password" name="pass" maxlength="20" required id="caixa">
-        <p><a href="" id="t_aux">Esqueceu sua senha?</a></p>
+        <label class="t_label"><b>Senha</b></label><br>
+        <input type="password" name="pass" maxlength="20" required class="caixa">
+        <p><a href="" class="t_aux">Esqueceu sua senha?</a></p>
         <br>
-        <input type="submit" value="Entrar" id="caixa"><br><br>
-        <p id="t_rodape"><b>Não tem conta?</b>  <a href="http://localhost/HM-Help-Me/cadastro.php" id="t_aux">CADASTRE-SE</a></p>
+        <input type="submit" value="Entrar" class="caixa"><br><br>
+        <p class="t_rodape"><b>Não tem conta?</b>  <a href="http://localhost/HM-Help-Me/cadastro.php" class="t_aux">CADASTRE-SE</a></p>
     </form>
 </body>
 </html>
