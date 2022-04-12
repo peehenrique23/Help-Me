@@ -9,17 +9,16 @@
 </head>
 <body>
     <h1 id="t_central">HELP ME</h1>
-    <form action=inseribd.php method="post" name="login" enctype="multipart/form-data" id="b_login">
+    <form action=login.php method="post" name="login" enctype="multipart/form-data" id="b_login">
         <label id="t_label"><b>Login</b></label><br>
         <input type = "text" name ="login" maxlength="50" required placeholder="Email/Nome Usuário" id="caixa">
-        <p><a href="">Esqueceu seu login?</a></p>
-        <br>
+        <br><br>
         <label id="t_label"><b>Senha</b></label><br>
         <input type="password" name="pass" maxlength="20" required id="caixa">
-        <p><a href="">Esqueceu sua senha?</a></p>
+        <p><a href="" id="t_aux">Esqueceu sua senha?</a></p>
         <br>
-        <input type="submit" value="Entrar" id="caixa">
-        <p>Não tem conta? <a href="" id="t_label">CADASTRE-SE</a></p>
+        <input type="submit" value="Entrar" id="caixa"><br><br>
+        <p id="t_rodape"><b>Não tem conta?</b>  <a href="http://localhost/HM-Help-Me/cadastro.php" id="t_aux">CADASTRE-SE</a></p>
     </form>
 </body>
 </html>
