@@ -9,20 +9,21 @@
 </head>
 <body>
 <h1 id="t_central">HELP ME</h1>
-    <form action=inseribd.php method="post" name="login" enctype="multipart/form-data" id="b_login">
+    <form action=inserebd.php method="post" name="login" enctype="multipart/form-data" id="b_login">
         <label class="t_label"><b>Login</b></label><br>
         <input type = "text" name ="login" maxlength="10" required placeholder="Nome Usuário" 
-        class="caixa"><br><br>
+        class="caixa" onblur="validauser()" id="user"><br><br>
         <label class="t_label"><b>E-mail</b></label><br>
-        <input type = "text" name ="login" maxlength="50" required placeholder="E-mail" class="caixa">
+        <input type = "email" name ="login" maxlength="50" required placeholder="E-mail" class="caixa"
+        id="email" onblur="validaemail('email')">
         <br><br>
         <label class="t_label"><b>Senha</b></label><br>
-        <input type="password" name="pass" maxlength="20" required class="caixa" id="pass1">
+        <input type="password" name="pass" maxlength="20" required class="caixa" id="pass1" placeholder="Digite sua senha">
         <br>
-        <input type="password" name="pass" maxlength="20" required class="caixa" id="pass2">
+        <input type="password" name="pass" maxlength="20" required class="caixa" id="pass2" onblur="validasenha()" placeholder="Digite sua senha novamente">
         <br>
-        <p id="message"></p>
-        <input type="submit" value="Cadastrar" class="caixa" id="cad"><br>
+        <p id="message" style="color: red;" style="font-family: Verdana, Geneva, Tahoma, sans-serif ;"></p>
+        <input type="submit" value="Cadastrar" class="caixa" id="cad" onclick="validasenha()" onclick="validaemail()"><br>
         <p class="t_rodape"><a href="http://localhost/HM-Help-Me/index.php" class="t_aux">Voltar</a></p>
     </form>
 

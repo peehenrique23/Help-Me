@@ -1,7 +1,7 @@
 body{
     text-align: center;
     width: 100%;
-    background-color: black;
+    background-color: white;
 }
 
 #t_central{
@@ -30,6 +30,10 @@ p.t_rodape{
     font-family: Verdana, Geneva, Tahoma, sans-serif ;
     font-size: 80%;
     text-decoration: none;
+}
+
+p.alerta{
+    color:rgba(206, 38, 38, 0.596) ;
 }
 
 .caixa{
