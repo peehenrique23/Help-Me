@@ -15,7 +15,7 @@
         <br><br>
         <label class="t_label"><b>Senha</b></label><br>
         <input type="password" name="pass" maxlength="20" required class="caixa">
-        <p><a href="" class="t_aux">Esqueceu sua senha?</a></p>
+        <p><a href="http://localhost/HM-Help-Me/esqueci-minha-senha.php" class="t_aux">Esqueci minha senha</a></p>
         <br>
         <input type="submit" value="Entrar" class="caixa"><br><br>
         <p class="t_rodape"><b>Não tem conta?</b>  <a href="http://localhost/HM-Help-Me/cadastro.php" class="t_aux">CADASTRE-SE</a></p>

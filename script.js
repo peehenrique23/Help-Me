@@ -35,7 +35,7 @@
         //Variaveis locais
         var user    = (document.getElementById("user").value);
         var xmlhttp = new XMLHttpRequest();
-
+        if (user != ""){
         xmlhttp.onreadystatechange=function() {
             if (this.readyState==4 && this.status==200) {
              let position = this.response.search('ZH');
@@ -48,7 +48,29 @@
             }
             }
         }
+        }
+        xmlhttp.open("GET","getuser.php?q="+user,true);
+        xmlhttp.send();
+    }
 
+    function validauser2(){
+        //Variaveis locais
+        var user    = (document.getElementById("user").value);
+        var xmlhttp = new XMLHttpRequest();
+        if (user != ""){
+        xmlhttp.onreadystatechange=function() {
+            if (this.readyState==4 && this.status==200) {
+             let position = this.response.search('ZG');
+             if(position > 0){
+                document.getElementById("res-login").innerHTML = "Esse user não existe :(" ;
+                document.getElementById("user").value = clear;
+            }
+             else{
+                document.getElementById("res-login").innerHTML = "";
+            }
+            }
+        }
+        }
         xmlhttp.open("GET","getuser.php?q="+user,true);
         xmlhttp.send();
     }
